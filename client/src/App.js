@@ -9,6 +9,9 @@ import thunk from "redux-thunk"
 // import reducer here
 import DogImg from "./components/DogImg"
 
+// import reducer of dog img
+import { DogImgReducer as reducer } from "./reducers/DogImgReducer"
+
 // created store for reducer
 const store = createStore(reducer, applyMiddleware(thunk))
 
