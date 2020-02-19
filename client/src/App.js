@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 
 // redux imports here
 import { createStore, applyMiddleware } from "redux"
@@ -10,7 +9,7 @@ import thunk from "redux-thunk"
 import DogImg from "./components/DogImg"
 
 // import reducer of dog img
-import { DogImgReducer as reducer } from "./reducers/DogImgReducer"
+import reducer from "./reducers/reducer"
 
 // created store for reducer
 const store = createStore(reducer, applyMiddleware(thunk))

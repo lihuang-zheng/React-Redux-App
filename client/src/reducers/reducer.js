@@ -6,7 +6,7 @@ const initialState = {
     dogImg: ""
 }
 
-const DogImgReducer = (state = initialState, action) => {
+const reducer = (state = initialState, action) => {
     switch (action.type) {
         case GET_DOG_DATA:
             return {
@@ -18,4 +18,4 @@ const DogImgReducer = (state = initialState, action) => {
     }
 }
 
-export default DogImgReducer
+export default reducer
