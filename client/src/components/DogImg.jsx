@@ -22,6 +22,7 @@ const DogImg = props => {
 
     return (
         <div>
+            {console.log(props.dogImg)}
             <div className="button">
                 <button onClick={handleGetData}>Get Random Dog</button>
             </div>
